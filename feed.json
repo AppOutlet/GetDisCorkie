@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "DisCorkie",
+    "description": "",
+    "home_page_url": "https://discorkie.appoutlet.dev",
+    "feed_url": "https://discorkie.appoutlet.dev/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "AppOutlet team"
+    },
+    "items": [
+    ]
+}
