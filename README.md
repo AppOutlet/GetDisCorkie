@@ -70,7 +70,11 @@ DisCorkie is proprietary software. Please review our **End User License Agreemen
 
 ## **💙 Support the Project**
 
-If you love using DisCorkie, consider **sharing it with others** or giving us a ⭐ on GitHub. Your support helps keep the project alive!
+💙 Support the Project
+
+If you love using DisCorkie, consider sharing it with others or giving us a ⭐ on GitHub. Your support helps keep the project alive!
+
+Want to be part of the conversation? Join our discussions and connect with other users:[🔗 DisCorkie Discussions](https://github.com/AppOutlet/GetDisCorkie/discussions)
 
 Happy forum browsing! 🚀
 
