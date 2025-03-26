@@ -18,7 +18,9 @@ Welcome to **DisCorkie**, an intuitive Discourse client designed to make discove
 	<tr>
 		<td>Windows</td>
 		<td>
-            <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/AppOutlet/GetDiscorkie/total?style=for-the-badge&label=Download%20from%20GitHub&color=%23FFF8F4&link=https%3A%2F%2Fgithub.com%2FAppOutlet%2FGetDisCorkie%2Freleases%2Flatest"/>
+            <a href="https://github.com/AppOutlet/GetDisCorkie/releases/latest">
+                <img style="height: 2.2rem;" alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/AppOutlet/GetDiscorkie/total?style=for-the-badge&label=Download&color=%23FFF8F4"/>
+            </a>
 		</td>
 	</tr>
 	<tr>
