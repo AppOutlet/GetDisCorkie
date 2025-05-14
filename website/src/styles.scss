@@ -43,7 +43,7 @@ $grid-columns: 12;
 $gutter-size: 16px;
 
 // Define the maximum width of the container
-$max-container-width: 1840px;
+$max-container-width: 1220px;
 
 // Calculate half the gutter size for padding/margins using math.div()
 $half-gutter: math.div($gutter-size, 2);
