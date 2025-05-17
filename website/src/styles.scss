@@ -2,14 +2,26 @@
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 @use "sass:math"; // Import the math module
+@use 'bootstrap/scss/bootstrap-grid.scss';
 
 $background-color: #FBF9F5;
 $text-color: #693732;
 
+:root {
+  @include mat.toolbar-overrides((
+    container-background-color: $background-color,
+    container-text-color: $text-color,
+  ));
+  
+  @include mat.theme-overrides((
+    primary: $text-color,
+    on-primary: $background-color,
+    corner-large: 32px
+  ));
+}
+
 html {
   @include mat.theme((color: (theme-type: light,
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
         use-system-variables: true,
         system-variables-prefix: 'discorkie'
       ),
@@ -22,8 +34,6 @@ html {
     ));
 }
 
-/* You can add global styles to this file, and also import other style files */
-
 html,
 body {
   height: 100%;
@@ -35,82 +45,3 @@ body {
   font-family: Montserrat, sans-serif;
   color: var(--myapp-text-color, #693732);
 }
-
-:root {
-  @include mat.toolbar-overrides((
-    container-background-color: $background-color,
-    container-text-color: $text-color,
-  ));
-}
-
-// region SCSS Grid System
-
-// --- Variables ---
-// Define the number of columns in the grid
-$grid-columns: 12;
-
-// Define the size of the gutter between columns (in pixels)
-$gutter-size: 16px;
-
-// Define the maximum width of the container
-$max-container-width: 1220px;
-
-// Calculate half the gutter size for padding/margins using math.div()
-$half-gutter: math.div($gutter-size, 2);
-
-// --- Mixins ---
-
-// Mixin for the main container
-// Sets max-width and centers the container
-@mixin container {
-  max-width: $max-container-width;
-  margin-left: auto;
-  margin-right: auto;
-  // Optional: Add padding to prevent content from touching the edges on smaller screens
-  padding-left: $half-gutter;
-  padding-right: $half-gutter;
-}
-
-// Mixin for grid rows
-// Uses negative margin to offset the column padding/gutters
-@mixin row {
-  display: flex;
-  flex-wrap: wrap; // Allow columns to wrap to the next line
-  margin-left: -$half-gutter;
-  margin-right: -$half-gutter;
-}
-
-// Mixin for grid columns
-// Calculates the width based on the number of columns and adds padding for gutters
-@mixin col($span: 1) {
-  // Calculate column width using calc() for future compatibility
-  width: calc((100% / #{$grid-columns}) * #{$span});
-  // Add padding equal to half the gutter size on both sides
-  padding-left: $half-gutter;
-  padding-right: $half-gutter;
-  // Ensure columns don't shrink below their content size
-  flex-shrink: 0;
-  // Allow columns to grow if needed
-  flex-grow: 1;
-}
-
-// --- Grid Classes ---
-
-// Apply the container mixin to a class (e.g., .container)
-.container {
-  @include container;
-}
-
-// Apply the row mixin to a class (e.g., .row)
-.row {
-  @include row;
-}
-
-// Generate column classes (e.g., .col-1, .col-2, ..., .col-12)
-@for $i from 1 through $grid-columns {
-  .col-#{$i} {
-    @include col($i);
-  }
-}
-
-// endregion

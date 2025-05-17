@@ -1,5 +1,223 @@
+$icon-size: 3em;
+
 .title {
   text-transform: uppercase;
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600;
+  /* Semi-bold */
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.asana {
+  animation: floating-effect-1 12s ease infinite;
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+}
+
+.epic {
+  animation: floating-effect-2 12s ease infinite;
+  position: absolute;
+  bottom: 50%;
+  left: 8%;
+}
+
+.monzo {
+  animation: floating-effect-3 12s ease infinite;
+  position: absolute;
+  top: 36%;
+  right: 6%;
+}
+
+.nu {
+  animation: floating-effect-4 12s ease infinite;
+  position: absolute;
+  top: 9%;
+  left: 16%;
+}
+
+.openai {
+  animation: floating-effect-5 12s ease infinite;
+  position: absolute;
+  top: 16%;
+  right: 21%;
+}
+
+.smart-things {
+  animation: floating-effect-6 12s ease infinite;
+  position: absolute;
+  bottom: 25%;
+  right: 13%;
+}
+
+@keyframes floating-effect-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(0.15em, -0.3em);
+  }
+
+  40% {
+    transform: translate(0.3em, 0.05em);
+  }
+
+  60% {
+    transform: translate(0.15em, 0.3em);
+  }
+
+  80% {
+    transform: translate(-0.15em, 0.15em);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floating-effect-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  15% {
+    transform: translate(-0.1em, -0.25em);
+  }
+
+  35% {
+    transform: translate(-0.3em, 0.1em);
+  }
+
+  55% {
+    transform: translate(-0.1em, 0.3em);
+  }
+
+  75% {
+    transform: translate(0.2em, 0.05em);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floating-effect-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0.2em, -0.2em);
+  }
+
+  50% {
+    transform: translate(-0.3em, 0.15em);
+  }
+
+  75% {
+    transform: translate(0.1em, 0.3em);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floating-effect-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-0.2em, -0.2em);
+  }
+
+  40% {
+    transform: translate(0.1em, -0.3em);
+  }
+
+  60% {
+    transform: translate(0.3em, 0.1em);
+  }
+
+  80% {
+    transform: translate(-0.1em, 0.3em);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floating-effect-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  18% {
+    transform: translate(0.3em, 0.1em);
+  }
+
+  36% {
+    transform: translate(0.1em, -0.3em);
+  }
+
+  54% {
+    transform: translate(-0.2em, 0.2em);
+  }
+
+  72% {
+    transform: translate(-0.3em, -0.1em);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floating-effect-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  22% {
+    transform: translate(-0.2em, 0.2em);
+  }
+
+  44% {
+    transform: translate(0.3em, -0.1em);
+  }
+
+  66% {
+    transform: translate(0.1em, 0.3em);
+  }
+
+  88% {
+    transform: translate(-0.1em, -0.3em);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.download-button {
   text-align: center;
 }
