@@ -1,10 +1,11 @@
 import { Component } from "@angular/core";
 import { HeaderComponent } from "./header/header.component";
 import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
+import { HeroComponent } from "./hero/hero.component";
 
 @Component({
   selector: "app-root",
-  imports: [HeaderComponent, MatIconModule],
+  imports: [HeaderComponent, MatIconModule, HeroComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })
