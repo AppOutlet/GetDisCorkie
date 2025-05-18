@@ -3,10 +3,12 @@ import { HeaderComponent } from "./header/header.component";
 import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
 import { HeroComponent } from "./hero/hero.component";
 import { SloganComponent } from "./slogan/slogan.component";
+import { FeaturesComponent } from "./features/features.component";
+import { DownloadComponent } from "./download/download.component";
 
 @Component({
   selector: "app-root",
-  imports: [HeaderComponent, MatIconModule, HeroComponent, SloganComponent],
+  imports: [HeaderComponent, MatIconModule, HeroComponent, SloganComponent, FeaturesComponent, DownloadComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })
