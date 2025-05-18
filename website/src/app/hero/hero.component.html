@@ -1,9 +1,11 @@
-<div class="container">
+<div class="container" style="position: relative;">
+
   <div class="row">
     <div class="col-12">
       <h1 class="title">Explore new forums,<br />stay connected</h1>
     </div>
   </div>
+
   <div class="row">
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 image-wrapper">
       <img class="main-image" src="img/hero/hero.png" alt="screenshot of the app" />
@@ -15,10 +17,19 @@
       <img src="img/hero/smart-things-icon.png" alt="" class="icon smart-things">
     </div>
   </div>
+
+  <div class="social-button-wrapper">
+    <app-social-button icon="instagram-logo" link="https://www.instagram.com/app.outlet/"></app-social-button>
+    <app-social-button icon="x-logo" link="https://x.com/AppOutletTeam"></app-social-button>
+    <app-social-button icon="threads-logo" link="https://www.threads.com/@app.outlet"></app-social-button>
+    <app-social-button icon="mastodon-logo" link="https://mastodon.social/@AppOutlet"></app-social-button>
+    <app-social-button icon="youtube-logo" link="https://www.youtube.com/@AppOutletTeam"></app-social-button>
+  </div>
+
   <div class="download-button">
-      <a href="#download" mat-flat-button class="px-4">
-        <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-download" class="px-1"></mat-icon>
-        <span>DOWNLOAD</span>
-      </a>
+    <a href="#download" mat-flat-button class="px-4">
+      <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-download" class="px-1"></mat-icon>
+      <span>DOWNLOAD</span>
+    </a>
   </div>
 </div>

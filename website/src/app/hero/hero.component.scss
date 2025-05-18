@@ -221,3 +221,14 @@ $icon-size: 3em;
 .download-button {
   text-align: center;
 }
+
+.social-button-wrapper {
+  position: absolute;
+  right: 3em;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.2em;
+}

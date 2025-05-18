@@ -12,11 +12,19 @@ $text-color: #693732;
     container-background-color: $background-color,
     container-text-color: $text-color,
   ));
-  
+
   @include mat.theme-overrides((
     primary: $text-color,
     on-primary: $background-color,
     corner-large: 32px
+  ));
+
+  @include mat.button-overrides((
+    filled-container-shape: .6em,
+  ));
+
+  @include mat.icon-button-overrides((
+    icon-color: $text-color,
   ));
 }
 
