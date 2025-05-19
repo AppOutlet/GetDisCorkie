@@ -1,3 +1,41 @@
-<div class="container">
-  <p id="download">download works!</p>
-</div>
+<section class="container" id="download">
+  <div class="background"></div>
+  <div class="row foreground">
+    <div class="col-lg-5 col-md-12">
+      <img src="img/download/devices.png" alt="A screenshot of the app on different devices" class="devices" />
+    </div>
+    <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center h-100">
+      <div class="w-100 download-buttons">
+        <h2>download on your device</h2>
+        <p>Simplify the way you explore and engage in online discussions. Download DisCorkie now and take control of your forum experience.</p>
+
+        <h3>Desktop</h3>
+
+
+        <app-download-button
+          icon="windows-logo"
+          text="Windows"
+          link="https://github.com/AppOutlet/GetDisCorkie/releases/latest"
+        ></app-download-button>
+
+        <app-download-button
+          icon="linux-logo"
+          text="Flatpak"
+          link="https://flathub.org/apps/dev.appoutlet.DisCorkie"
+        ></app-download-button>
+
+        <app-download-button
+          icon="linux-logo"
+          text="Snap"
+          link="https://snapcraft.io/discorkie"
+        ></app-download-button>
+
+        <h3>Mobile</h3>
+
+        <a href="https://play.google.com/store/apps/details?id=dev.appoutlet.DisCorkie" target="_blank" rel="noopener">
+          <img class="mobile-button" src="img/download/google-play-store.png" alt="Google play store logo"  />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
