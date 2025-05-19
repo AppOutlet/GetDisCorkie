@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+
+a {
+  background-color: #FBF9F5 !important;
+  display: inline-flex;
+  border: #69373221 .001em solid;
+    @include mat.button-overrides((
+    container-shape: .6em,
+  ));
+  margin-right: 1em;
+}

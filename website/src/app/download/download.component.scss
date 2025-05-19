@@ -1,0 +1,77 @@
+.devices {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F3EFE7;
+}
+
+.background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92%;
+  height: 70%;
+  z-index: 1;
+  background-color: #F3EFE7;
+  border-radius: 2em;
+  transform: translate(-50%, -50%);
+}
+
+.foreground {
+  position: relative;
+  z-index: 2;
+}
+
+section.container {
+  position: relative;
+  min-height: 350px; // adjust as needed for your layout
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-weight: 500;
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+}
+
+@media (max-width: 992px) {
+  .devices {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 33em;
+    max-height: 33em;
+    width: auto;
+  }
+
+  .background {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .download-buttons {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+}
+
+.mobile-button {
+  height: 2.5em;
+}
