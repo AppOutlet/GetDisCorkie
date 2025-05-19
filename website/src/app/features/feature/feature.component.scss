@@ -1,8 +1,11 @@
-$margin-vertical: 5em;
-
 .feature {
-  margin-top: $margin-vertical;
-  margin-bottom: $margin-vertical;
+  margin-top: 5em;
+  margin-bottom: 5em;
+
+  @media (max-width: 767.98px) {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+  }
 }
 
 a {
