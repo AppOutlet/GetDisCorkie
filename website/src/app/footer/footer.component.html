@@ -2,8 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <img src="logo.svg" alt="Application logo" class="logo" />
-        <p class="app-name">DisCorkie</p>
+        <a routerLink="/">
+          <img src="logo.svg" alt="Application logo" class="logo" />
+        </a>
+
+        <a routerLink="/">
+          <p class="app-name">DisCorkie</p>
+        </a>
+
         <p class="copyright mb-5">© Copyright 2025 AppOutlet</p>
 
         <a href="https://www.instagram.com/app.outlet" mat-icon-button target="_blank">
@@ -29,17 +35,17 @@
       <div class="col link-column">
         <h3>About</h3>
         <a routerLink="/faq">FAQ</a>
-        <a href="">Changelog</a>
-        <a href="">Blog</a>
-        <a href="">AppOutlet</a>
+        <a href="https://blog.appoutlet.dev/tag/discorkie-changelog?source=tags_bottom_blogs" target="_blank">Changelog</a>
+        <a href="https://blog.appoutlet.dev" target="_blank">Blog</a>
+        <a href="https://appoutlet.dev" target="_blank">AppOutlet</a>
       </div>
 
       <div class="col link-column">
         <h3>Downloads</h3>
-        <a href="">Android</a>
-        <a href="">Windows</a>
-        <a href="">Linux (Flatpak)</a>
-        <a href="">Linux (Snap)</a>
+        <a href="https://play.google.com/store/apps/details?id=dev.appoutlet.DisCorkie" target="_blank">Android</a>
+        <a [href]="windowsDownloadLink">Windows</a>
+        <a href="https://flathub.org/apps/dev.appoutlet.DisCorkie" target="_blank">Flatpak</a>
+        <a href="https://snapcraft.io/discorkie" target="_blank">Snap</a>
       </div>
 
       <div class="col link-column">
