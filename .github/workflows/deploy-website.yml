@@ -25,9 +25,8 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: 
-          cd website
-          npm run build
+        working-directory: website
+        run: npm run build
 
       - name: Upload static files as artifact
         id: deployment
