@@ -1,0 +1,6 @@
+<div class="post-card">
+  <img [src]="post?.coverImage?.url">
+  <p class="date">{{ post?.publishedAt | date:'longDate' }}</p>
+  <p class="title">{{ post?.title }}</p>
+  <p class="brief">{{ post?.brief }}</p>
+</div>

@@ -1,12 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Post } from '../posts.component';
+import { MatCardModule } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-post',
-  imports: [],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './post.component.html',
-  styleUrl: './post.component.scss'
+  styleUrl: './post.component.scss',
+  standalone: true,
 })
-export class PostComponent {
+export class PostComponent implements OnInit{
   @Input() post: Post | null = null;
+
+  ngOnInit(): void {
+    console.log(this.post);
+  }
 }

@@ -1,5 +1,16 @@
 <section class="container">
-    <div class="row">
-      <app-post *ngFor="let post of posts" class="col-lg-4"></app-post>
+  <div class="row justify-content-between">
+
+    <div class="col-6">
+      <h2>Blog</h2>
     </div>
+
+    <div class="col-6 d-flex justify-content-end align-items-center">
+      <a href="https://blog.appoutlet.dev" target="_blank" mat-button>VIEW ALL POSTS</a>
+    </div>
+
+  </div>
+  <div class="row">
+    <app-post *ngFor="let post of posts" [post]="post" class="col-lg-4"></app-post>
+  </div>
 </section>
