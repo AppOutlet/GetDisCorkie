@@ -6,6 +6,7 @@ import { SloganComponent } from './slogan/slogan.component';
 import { FeaturesComponent } from './features/features.component';
 import { DownloadComponent } from './download/download.component';
 import { PostsComponent } from './posts/posts.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { PostsComponent } from './posts/posts.component';
     FeaturesComponent,
     DownloadComponent,
     PostsComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
