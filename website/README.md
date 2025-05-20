@@ -1,6 +1,5 @@
 # DisCorkie
 Todos:
-- Create Privacy policy page
 - Create License Agreement page
 - Create data Control page
 - Add dropdown menus on site header
