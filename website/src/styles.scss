@@ -1,45 +1,66 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 @use "sass:math"; // Import the math module
-@use 'bootstrap/scss/bootstrap-grid.scss';
-
-$background-color: #FBF9F5;
-$text-color: #693732;
+@use "bootstrap/scss/bootstrap-grid.scss";
+@use "variables" as variables;
 
 :root {
-  @include mat.toolbar-overrides((
-    container-background-color: $background-color,
-    container-text-color: $text-color,
-  ));
+  --mat-sys-color-primary: variables.$text-color;
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: variables.$background-color,
+      container-text-color: variables.$text-color,
+    )
+  );
 
-  @include mat.theme-overrides((
-    primary: $text-color,
-    on-primary: $background-color,
-    corner-large: 32px
-  ));
+  @include mat.theme-overrides(
+    (
+      primary: variables.$text-color,
+      on-primary: variables.$background-color,
+      corner-large: 32px,
+    )
+  );
 
-  @include mat.button-overrides((
-    filled-container-shape: .6em,
-  ));
+  @include mat.button-overrides(
+    (
+      filled-container-shape: 0.6em,
+    )
+  );
 
-  @include mat.icon-button-overrides((
-    icon-color: $text-color,
-  ));
+  @include mat.icon-button-overrides(
+    (
+      icon-color: variables.$text-color,
+    )
+  );
+
+  @include mat.menu-overrides(
+    (
+      item-label-text-color: variables.$text-color,
+      item-icon-color: variables.$text-color,
+      container-color: variables.$background-color,
+      container-shape: 0.7em,
+    )
+  );
 }
 
 html {
-  @include mat.theme((color: (theme-type: light,
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
         use-system-variables: true,
-        system-variables-prefix: 'discorkie'
+        system-variables-prefix: "discorkie",
       ),
-      typography: (plain-family: Montserrat,
+      typography: (
+        plain-family: Montserrat,
         bold-weight: 900,
         medium-weight: 600,
         regular-weight: 400,
       ),
       density: 0,
-    ));
+    )
+  );
 }
 
 html,
@@ -49,9 +70,9 @@ body {
 
 body {
   margin: 0;
-  background: $background-color;
+  background: variables.$background-color;
   font-family: Montserrat, sans-serif;
-  color: var(--myapp-text-color, #693732);
+  color: variables.$text-color;
 }
 
 a {
