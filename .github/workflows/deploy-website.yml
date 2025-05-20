@@ -35,6 +35,9 @@ jobs:
           path: website/dist/website/browser
 
   deploy:
+    permissions:
+      pages: write     
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
