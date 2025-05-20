@@ -15,15 +15,14 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
-        working-directory: website
         with:
-          node-version: '22.15.0'
+          node-version-file: 'website/.nvmrc'
           cache: 'npm'
+          cache-dependency-path: 'website/package-lock.json'
 
       - name: Install dependencies
-        run: |
-          cd website
-          npm ci
+        working-directory: website
+        run: npm ci
 
       - name: Build Angular app
         run: 
