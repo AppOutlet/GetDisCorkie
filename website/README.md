@@ -1,6 +1,5 @@
 # DisCorkie
 Todos:
-- Create License Agreement page
 - Create data Control page
 - Add dropdown menus on site header
 - Add link to home on top bar
