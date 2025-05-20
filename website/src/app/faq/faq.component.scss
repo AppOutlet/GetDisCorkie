@@ -1,0 +1,16 @@
+@use "@angular/material" as mat;
+
+$text-color: #693732;
+$background-color: #FBF9F5;
+
+section {
+  @include mat.expansion-overrides(
+    (
+      container-background-color: $background-color,
+      header-text-color: $text-color,
+      header-description-color: $text-color,
+      container-text-color: $text-color,
+      header-indicator-color: $text-color,
+    )
+  );
+}
