@@ -1,12 +1,57 @@
-<div class="container">
-  <mat-toolbar>
-    <img class="logo" src="logo.svg"/>
-    <span class="site-title">DisCorkie</span>
-    <span class="spacer"></span>
-    <a href="https://blog.appoutlet.dev" target="_blank" mat-button>
-      <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-note"></mat-icon>
-      Blog
-    </a>
-  </mat-toolbar>
-</div>
+<section>
+  <div class="container">
+    <mat-toolbar>
+      <a routerLink="">
+        <img class="logo" src="logo.svg" />
+      </a>
+      <a routerLink="">
+        <span class="site-title">DisCorkie</span>
+      </a>
 
+      <span class="spacer"></span>
+
+      <button [matMenuTriggerFor]="about" mat-button>
+        <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-info"></mat-icon>
+        About
+      </button>
+      <button [matMenuTriggerFor]="organisation" mat-button>
+        <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-buildings"></mat-icon>
+        Organisation
+      </button>
+      <a routerLink="/download" mat-flat-button>
+        <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-download"></mat-icon>
+        Download
+      </a>
+    </mat-toolbar>
+  </div>
+
+  <mat-menu #about="matMenu">
+    <a routerLink="/faq" mat-menu-item>
+      <span>FAQ</span>
+    </a>
+    <a href="https://blog.appoutlet.dev/tag/discorkie-changelog?source=tags_bottom_blogs" target="_blank" mat-menu-item>
+      <span>Changelog</span>
+    </a>
+    <a href="https://blog.appoutlet.dev" target="_blank" mat-menu-item>
+      <span>Blog</span>
+    </a>
+  </mat-menu>
+
+  <mat-menu #organisation="matMenu">
+    <a routerLink="/privacy-policy" mat-menu-item>
+      <span>Privacy policy</span>
+    </a>
+
+    <a routerLink="/data-deletion-request" mat-menu-item>
+      <span>Data control</span>
+    </a>
+
+    <a routerLink="/privacy-policy" mat-menu-item>
+      <span>Privacy policy</span>
+    </a>
+
+    <a href="https://appoutlet.dev" target="_blank" mat-menu-item>
+      <span>AppOutlet</span>
+    </a>
+  </mat-menu>
+</section>
