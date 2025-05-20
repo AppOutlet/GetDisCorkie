@@ -53,3 +53,8 @@ body {
   font-family: Montserrat, sans-serif;
   color: var(--myapp-text-color, #693732);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

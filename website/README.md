@@ -1,6 +1,5 @@
 # DisCorkie
 Todos:
-- Create FAQ screen
 - Create Tag for discorkie release notes and link at the bottom
 - Link AppOutlet link to the appoutlet website
 - Fetch the last windows release and start download directly when clicking on the link

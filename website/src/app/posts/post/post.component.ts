@@ -10,10 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './post.component.scss',
   standalone: true,
 })
-export class PostComponent implements OnInit{
+export class PostComponent {
   @Input() post: Post | null = null;
-
-  ngOnInit(): void {
-    console.log(this.post);
-  }
 }
