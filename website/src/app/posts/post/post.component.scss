@@ -7,18 +7,25 @@ img {
 
 .date {
   opacity: 0.5;
+  font-size: small;
 }
 
 .title {
   font-weight: 600;
+  font-size: large;
 }
 
 .brief {
-  font-weight: 400;
+  font-size: medium;
 }
 
 .post-card {
   margin-top: 1em;
   margin-bottom: 3em;
   border-radius: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
