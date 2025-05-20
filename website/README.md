@@ -1,8 +1,5 @@
 # DisCorkie
 Todos:
-- Create Tag for discorkie release notes and link at the bottom
-- Link AppOutlet link to the appoutlet website
-- Fetch the last windows release and start download directly when clicking on the link
 - Create Privacy policy page
 - Create License Agreement page
 - Create data Control page

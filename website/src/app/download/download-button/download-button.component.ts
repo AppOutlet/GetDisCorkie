@@ -12,5 +12,6 @@ export class DownloadButtonComponent {
   @Input() icon: string = '';
   @Input() text: string = '';
   @Input() link: string = '';
+  @Input() target: string = '_blank';
 }
 
