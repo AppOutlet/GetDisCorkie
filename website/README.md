@@ -1,6 +1,5 @@
 # DisCorkie
 Todos:
-- Setup navigation
 - Create FAQ screen
 - Create Tag for discorkie release notes and link at the bottom
 - Link AppOutlet link to the appoutlet website

@@ -7,6 +7,7 @@ import { FeaturesComponent } from './features/features.component';
 import { DownloadComponent } from './download/download.component';
 import { PostsComponent } from './posts/posts.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     FeaturesComponent,
     DownloadComponent,
     PostsComponent,
-    FooterComponent
+    FooterComponent,
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
