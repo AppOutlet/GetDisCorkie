@@ -3,6 +3,7 @@ import { HeaderComponent } from './header/header.component';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-root',
