@@ -1,6 +1,10 @@
 <section>
   <div class="container">
     <mat-toolbar>
+      <button mat-icon-button [matMenuTriggerFor]="main" class="menu-button">
+        <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-list"></mat-icon>
+      </button>
+
       <a routerLink="">
         <img class="logo" src="logo.svg" />
       </a>
@@ -10,14 +14,16 @@
 
       <span class="spacer"></span>
 
-      <button [matMenuTriggerFor]="about" mat-button>
-        <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-info"></mat-icon>
-        About
+      <button [matMenuTriggerFor]="about" mat-button class="hide-md">
+        <mat-icon class="material-symbols-rounded">info</mat-icon>
+        <span>About</span>
       </button>
-      <button [matMenuTriggerFor]="organisation" mat-button>
-        <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-buildings"></mat-icon>
-        Organisation
+
+      <button [matMenuTriggerFor]="organisation" mat-button class="mx-2 hide-md">
+        <mat-icon class="material-symbols-rounded">domain</mat-icon>
+        <span>Organisation</span>
       </button>
+
       <a routerLink="/download" mat-flat-button>
         <mat-icon aria-hidden="true" fontSet="ph" fontIcon="ph-download"></mat-icon>
         Download
@@ -27,31 +33,50 @@
 
   <mat-menu #about="matMenu">
     <a routerLink="/faq" mat-menu-item>
+      <mat-icon class="material-symbols-rounded">help</mat-icon>
       <span>FAQ</span>
     </a>
     <a href="https://blog.appoutlet.dev/tag/discorkie-changelog?source=tags_bottom_blogs" target="_blank" mat-menu-item>
+      <mat-icon class="material-symbols-rounded">text_compare</mat-icon>
       <span>Changelog</span>
     </a>
     <a href="https://blog.appoutlet.dev" target="_blank" mat-menu-item>
+      <mat-icon class="material-symbols-rounded">news</mat-icon>
       <span>Blog</span>
     </a>
   </mat-menu>
 
   <mat-menu #organisation="matMenu">
+    <a routerLink="/license-agreement" mat-menu-item>
+      <mat-icon class="material-symbols-rounded">contract</mat-icon>
+      <span>License agreement</span>
+    </a>
+
     <a routerLink="/privacy-policy" mat-menu-item>
+      <mat-icon class="material-symbols-rounded">passkey</mat-icon>
       <span>Privacy policy</span>
     </a>
 
     <a routerLink="/data-deletion-request" mat-menu-item>
+      <mat-icon class="material-symbols-rounded">shield_locked</mat-icon>
       <span>Data control</span>
     </a>
 
-    <a routerLink="/privacy-policy" mat-menu-item>
-      <span>Privacy policy</span>
-    </a>
-
     <a href="https://appoutlet.dev" target="_blank" mat-menu-item>
+      <mat-icon class="material-symbols-rounded">home</mat-icon>
       <span>AppOutlet</span>
     </a>
+  </mat-menu>
+
+  <mat-menu #main="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="about">
+      <mat-icon class="material-symbols-rounded">info</mat-icon>
+      <span>About</span>
+    </button>
+
+    <button mat-menu-item [matMenuTriggerFor]="organisation">
+      <mat-icon class="material-symbols-rounded">domain</mat-icon>
+      Organisation
+    </button>
   </mat-menu>
 </section>

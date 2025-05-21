@@ -1,5 +1,5 @@
-@use '@angular/material' as mat;
-@use '../../variables.scss' as variables;
+@use "@angular/material" as mat;
+@use "../../variables.scss" as variables;
 
 .spacer {
   flex: 1 1 auto;
@@ -8,9 +8,17 @@
 .logo {
   height: 2.1em;
   width: 2.1em;
-  padding-right: 0.94em;
+  margin-right: 0.4em;
 }
 
 .site-title {
   font-weight: 600;
+}
+
+.menu-button {
+  display: none;
+  margin-right: .4em;
+  @media (max-width: 768px) {
+    display: inline;
+  }
 }
