@@ -36,11 +36,6 @@ export class FaqComponent {
         'Absolutely. DisCorkie is designed for people who use multiple Discourse communities. Add as many as you like, and switch between them instantly.',
     },
     {
-      question: 'Is DisCorkie affiliated with Discourse?',
-      answer:
-        'No. DisCorkie is an independent app, built from the ground up to provide a better experience for Discourse users. It’s not officially connected to the Discourse project.',
-    },
-    {
       question: 'How is my login data handled?',
       answer:
         'Your privacy is a priority. DisCorkie stores authentication securely on your device and never shares your data.',
@@ -54,11 +49,6 @@ export class FaqComponent {
       question: 'Can I use it with self-hosted forums?',
       answer:
         'Definitely. As long as your Discourse forum is publicly accessible and running a standard configuration, DisCorkie should work smoothly.',
-    },
-    {
-      question: 'How can I share feedback or report an issue?',
-      answer:
-        'We love hearing from users! You can reach out through our social media channels or the feedback options in the app.',
     },
   ];
 }
