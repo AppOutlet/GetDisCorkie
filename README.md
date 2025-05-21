@@ -1,4 +1,4 @@
-![DisCorkie](https://discorkie.appoutlet.dev/discorkie-hero.png)
+![DisCorkie](https://discorkie.appoutlet.dev/img/hero/hero.avif)
 
 # **DisCorkie** – A Better Way to Explore and Manage Discourse Forums
 
