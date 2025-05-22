@@ -1,6 +1,6 @@
 <div class="post-card">
   <a [href]="post?.url" target="_blank" rel="noopener">
-    <img [src]="post?.coverImage?.url">
+    <img [src]="post?.coverImage?.url" alt="{{ 'Cover image for: ' + post?.title}}">
   </a>
   <p class="date">{{ post?.publishedAt | date:'longDate' }}</p>
 
