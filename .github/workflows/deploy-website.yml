@@ -32,7 +32,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: website/dist/website
+          path: website/dist/website/browser
 
   deploy:
     environment:
