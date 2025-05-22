@@ -22,7 +22,6 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideApollo(() => {
       const httpLink = inject(HttpLink);
-
       return {
         link: httpLink.create({ uri: 'https://gql.hashnode.com/graphql' }),
         cache: new InMemoryCache(),
