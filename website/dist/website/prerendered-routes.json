@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/": {},
+    "/data-deletion-request": {},
+    "/download": {},
+    "/faq": {},
+    "/license-agreement": {},
+    "/privacy-policy": {}
+  }
+}
