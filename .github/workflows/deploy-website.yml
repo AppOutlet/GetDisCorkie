@@ -28,22 +28,15 @@ jobs:
         working-directory: website
         run: npm run build
 
-      - name: Upload static files as artifact
-        id: deployment
-        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
-        with:
-          path: website/dist/website/browser
+      - name: Copy build output to docs
+        run: |
+          rm -rf docs/*
+          cp -r website/dist/website/browser/* docs/
 
-  deploy:
-    permissions:
-      pages: write     
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build-website
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and push changes to docs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "Update docs with latest build output" || echo "No changes to commit"
+          git push origin main
