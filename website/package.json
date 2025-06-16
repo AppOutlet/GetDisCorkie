@@ -20,7 +20,7 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/platform-server": "^19.2.0",
-    "@angular/router": "^19.2.0",
+    "@angular/router": "^20.0.3",
     "@angular/ssr": "^19.2.11",
     "apollo-angular": "^10.0.3",
     "bootstrap": "^5.3.6",
