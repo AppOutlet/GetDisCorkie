@@ -3,9 +3,9 @@
 a {
   background-color: #FBF9F5 !important;
   display: inline-flex;
-  border: #69373221 .001em solid;
+  border: #69373221 .1em solid;
     @include mat.button-overrides((
-    container-shape: .6em,
+    filled-container-shape: .6em,
   ));
   margin-right: 1em;
   margin-bottom: 1em;

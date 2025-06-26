@@ -22,14 +22,14 @@
     "@angular/platform-server": "^20.0.5",
     "@angular/router": "^20.0.5",
     "@angular/ssr": "^20.0.4",
-    "apollo-angular": "^10.0.3",
+    "@apollo/client": "^3.0.0",
+    "apollo-angular": "^11.0.0",
     "bootstrap": "^5.3.6",
     "express": "^4.18.2",
+    "graphql": "^16",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0",
-    "@apollo/client": "^3.0.0",
-    "graphql": "^16"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
     "@angular/build": "^20.0.4",
