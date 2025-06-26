@@ -9,12 +9,10 @@ import { RemarkModule } from 'ngx-remark';
   styleUrl: './privacy-policy.component.scss',
   imports: [RemarkModule, MatCardModule],
 })
-export class PrivacyPolicyComponent implements OnInit {
+export class PrivacyPolicyComponent {
   markdownContent = '';
 
-  constructor(private http: HttpClient) {}
-
-  ngOnInit(): void {
+  constructor(private http: HttpClient) {
     this.http
       .get('doc/privacy-policy.md', { responseType: 'text' })
       .subscribe((data) => {
