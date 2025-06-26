@@ -5,17 +5,19 @@
     <div class="col-lg-4">
       <p>Welcome to the DisCorkie FAQ. Whether you're just discovering DisCorkie or already managing multiple forums
         with ease, this page is here to help. We've compiled answers to common questions about what DisCorkie is, how it
-        works, and how to make the most of it across all your devices.</p>
+      works, and how to make the most of it across all your devices.</p>
     </div>
 
     <div class="col-lg-8">
       <mat-accordion>
-        <mat-expansion-panel *ngFor="let question of questions">
-          <mat-expansion-panel-header>
-            <mat-panel-title> {{ question.question }}</mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>{{ question.answer }}</p>
-        </mat-expansion-panel>
+        @for (question of questions; track question) {
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> {{ question.question }}</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>{{ question.answer }}</p>
+          </mat-expansion-panel>
+        }
       </mat-accordion>
 
       <div class="mt-4">

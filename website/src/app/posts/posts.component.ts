@@ -3,12 +3,12 @@ import { PostComponent } from './post/post.component';
 import { Apollo, gql } from 'apollo-angular';
 import { ApolloQueryResult } from '@apollo/client/core';
 import { map } from 'rxjs/operators';
-import { CommonModule } from '@angular/common';
+
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-posts',
-  imports: [CommonModule, PostComponent, MatButtonModule],
+  imports: [PostComponent, MatButtonModule],
   templateUrl: './posts.component.html',
   styleUrl: './posts.component.scss',
 })

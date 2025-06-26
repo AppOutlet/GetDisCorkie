@@ -11,6 +11,8 @@
 
   </div>
   <div class="row">
-    <app-post *ngFor="let post of posts" [post]="post" class="col-lg-4"></app-post>
+    @for (post of posts; track post) {
+      <app-post [post]="post" class="col-lg-4"></app-post>
+    }
   </div>
 </section>
