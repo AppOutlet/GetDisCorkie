@@ -1,11 +1,9 @@
-
 import { Component } from '@angular/core';
-import { MarkdownComponent, MarkdownModule, MarkdownService } from 'ngx-markdown';
+import { MarkdownComponent, MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 'app-privacy-policy',
-  imports: [MarkdownModule],
-  providers: [],
+  imports: [MarkdownComponent],
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })
