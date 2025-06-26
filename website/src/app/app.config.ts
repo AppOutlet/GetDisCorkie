@@ -13,19 +13,9 @@ import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
 import { provideApollo } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 import { InMemoryCache } from '@apollo/client/core';
-import { provideMarkdown, CLIPBOARD_OPTIONS, ClipboardButtonComponent } from 'ngx-markdown';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideMarkdown({
-      loader: HttpClient,
-      clipboardOptions: {
-        provide: CLIPBOARD_OPTIONS,
-        useValue: {
-          buttonComponent: ClipboardButtonComponent,
-        },
-      },
-    }),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
