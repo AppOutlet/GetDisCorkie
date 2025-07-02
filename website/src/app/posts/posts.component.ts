@@ -12,37 +12,42 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: './posts.component.html',
   styleUrl: './posts.component.scss',
 })
-export class PostsComponent implements OnInit{
+export class PostsComponent implements OnInit {
   private query = gql`
-    query {
-    publication(host: "blog.appoutlet.dev") {
-      title
-      posts(first: 3) {
-        edges {
-          node {
-            title
-            brief
-            url
-            publishedAt
-            coverImage {
-              url
+    {
+      publication(host: "blog.appoutlet.dev") {
+        series(slug: "discorkie") {
+          posts(first: 3) {
+            edges {
+              node {
+                title
+                brief
+                url
+                publishedAt
+                coverImage {
+                  url
+                }
+              }
             }
           }
         }
       }
     }
-  } `;
+  `;
 
   posts: Post[] = [];
 
   constructor(private apollo: Apollo) {}
 
   ngOnInit(): void {
-    this.apollo.watchQuery<PublicationResponse>({query: this.query})
-      .valueChanges
-      .pipe(
-        map((result: ApolloQueryResult<PublicationResponse>) => result.data.publication.posts.edges),
-        map((edges) => edges.map((edge) => edge.node)),
+    this.apollo
+      .watchQuery<PublicationResponse>({ query: this.query })
+      .valueChanges.pipe(
+        map(
+          (result: ApolloQueryResult<PublicationResponse>) =>
+            result.data.publication.series.posts.edges
+        ),
+        map((edges) => edges.map((edge) => edge.node))
       )
       .subscribe((result) => {
         this.posts = result;
@@ -51,13 +56,18 @@ export class PostsComponent implements OnInit{
 }
 
 export type PublicationResponse = {
-  publication: Publication
-}
+  publication: Publication;
+};
 
 export interface Publication {
   title: string;
+  series: Series;
+}
+
+export interface Series {
   posts: Posts;
 }
+
 export interface Posts {
   edges: PostEdge[];
 }
