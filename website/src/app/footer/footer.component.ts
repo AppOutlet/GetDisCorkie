@@ -14,6 +14,7 @@ import { DownloadService } from '../download/download.service';
 })
 export class FooterComponent implements OnInit {
   windowsDownloadLink: string = '';
+  currentYear: number = new Date().getFullYear();
 
   constructor(private readonly dowloadService: DownloadService) { }
 

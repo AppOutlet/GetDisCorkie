@@ -7,10 +7,10 @@
         </a>
 
         <a routerLink="/">
-          <p class="app-name">DisCorkie</p>
+          <p class="app-name" i18n>DisCorkie</p>
         </a>
 
-        <p class="copyright mb-5">© Copyright 2025 AppOutlet</p>
+        <p class="copyright mb-5">© Copyright {{ currentYear }} AppOutlet</p>
 
         <a href="https://www.instagram.com/app.outlet" mat-icon-button target="_blank">
           <mat-icon fontSet="ph" fontIcon="ph-instagram-logo" class="social-icon"></mat-icon>
@@ -33,15 +33,15 @@
       </div>
 
       <div class="col-lg-2 col-md-4 link-column">
-        <h3>About</h3>
-        <a routerLink="/faq">FAQ</a>
+        <h3 i18n>About</h3>
+        <a routerLink="/faq" i18n>FAQ</a>
         <a href="https://blog.appoutlet.dev/tag/discorkie-changelog?source=tags_bottom_blogs"
-          target="_blank">Changelog</a>
-        <a href="https://blog.appoutlet.dev" target="_blank">Blog</a>
+          target="_blank" i18n>Changelog</a>
+        <a href="https://blog.appoutlet.dev" target="_blank" i18n>Blog</a>
       </div>
 
       <div class="col-lg-2 col-md-4 link-column">
-        <h3>Downloads</h3>
+        <h3 i18n>Downloads</h3>
         <a href="https://play.google.com/store/apps/details?id=dev.appoutlet.DisCorkie" target="_blank">Android</a>
         <a [href]="windowsDownloadLink">Windows</a>
         <a href="https://flathub.org/apps/dev.appoutlet.DisCorkie" target="_blank">Flatpak</a>
@@ -49,11 +49,11 @@
       </div>
 
       <div class="col-lg-2 col-md-4 link-column">
-        <h3>Organisation</h3>
-        <a routerLink="/privacy-policy">Privacy policy</a>
-        <a routerLink="/license-agreement">License</a>
-        <a routerLink="/data-deletion-request">Data control</a>
-        <a href="https://appoutlet.dev" target="_blank">AppOutlet</a>
+        <h3 i18n>Organisation</h3>
+        <a routerLink="/privacy-policy" i18n>Privacy policy</a>
+        <a routerLink="/license-agreement" i18n>License</a>
+        <a routerLink="/data-deletion-request" i18n>Data control</a>
+        <a href="https://appoutlet.dev" target="_blank">AppOutlet.dev</a>
       </div>
     </div>
   </div>
