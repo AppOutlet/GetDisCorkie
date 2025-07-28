@@ -1,4 +1,4 @@
-![DisCorkie](https://discorkie.appoutlet.dev/img/hero/hero.avif)
+![DisCorkie](website/public/img/banner.png)
 
 # **DisCorkie** – A Better Way to Explore and Manage Discourse Forums
 
@@ -7,7 +7,7 @@ discovering, managing, and engaging with multiple forums seamless. Whether
 you're an active community member or simply browsing for new discussions,
 DisCorkie offers a streamlined experience in one powerful app.
 
-## **🚀 Features**
+### **🚀 Features**
 
 - 🔍 **Discover New Forums** – Find Discourse communities based on your
   interests and language preferences.
@@ -26,7 +26,7 @@ DisCorkie offers a streamlined experience in one powerful app.
 
 ## **[📥 Download](https://discorkie.appoutlet.dev/#download)**
 
-## **🐞 Reporting Issues & Feedback**
+### **🐞 Reporting Issues & Feedback**
 
 If you encounter any bugs, have suggestions, or just want to share your
 experience, please open an issue on GitHub:\
@@ -34,13 +34,13 @@ experience, please open an issue on GitHub:\
 
 Your feedback helps us improve DisCorkie for everyone!
 
-## **📜 License**
+### **📜 License**
 
 DisCorkie is proprietary software. Please review our **End User License
 Agreement (EULA)** for details:\
 🔗 **[View EULA](https://discorkie.appoutlet.dev/license-agreement)**
 
-## **💙 Support the Project**
+### **💙 Support the Project**
 
 If you love using DisCorkie, consider sharing it with others or giving us a ⭐
 on GitHub. Your support helps keep the project alive!
