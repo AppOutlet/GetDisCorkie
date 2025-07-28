@@ -1,5 +1,5 @@
 {
-  "locale": "en-US",
+  "locale": "en",
   "translations": {
     "7094232483852755137": "Requesting Account and Data Deletion for DisCorkie",
     "2086845410344323555": "This page provides instructions on how to request the deletion of your DisCorkie account and associated data managed by AppOutlet.",
@@ -99,6 +99,7 @@
     "401906258186747552": "This Agreement shall be governed by and construed under the laws of {$START_TAG_STRONG}Portugal{$CLOSE_TAG_STRONG}.",
     "4078546483118283134": "10. CONTACT INFORMATION",
     "6248661674395533112": "For any questions about this Agreement, contact {$START_TAG_STRONG}{$INTERPOLATION}{$CLOSE_TAG_STRONG}.",
-    "5828379357055435850": "By installing or using the Software, you acknowledge that you have read and understood this Agreement and agree to be bound by its terms."
+    "5828379357055435850": "By installing or using the Software, you acknowledge that you have read and understood this Agreement and agree to be bound by its terms.",
+    "134025950860375051": "VIEW ALL POSTS"
   }
 }
