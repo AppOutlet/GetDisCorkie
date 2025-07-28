@@ -17,12 +17,12 @@
 
       <button [matMenuTriggerFor]="about" mat-button class="hide-md">
         <mat-icon class="material-symbols-rounded">info</mat-icon>
-        <span>About</span>
+        <span i18n>About</span>
       </button>
 
       <button [matMenuTriggerFor]="organisation" mat-button class="mx-2 hide-md">
         <mat-icon class="material-symbols-rounded">domain</mat-icon>
-        <span>Organisation</span>
+        <span i18n>Organisation</span>
       </button>
 
       <a routerLink="/download" mat-flat-button>
@@ -35,32 +35,32 @@
   <mat-menu #about="matMenu">
     <a routerLink="/faq" mat-menu-item>
       <mat-icon class="material-symbols-rounded">help</mat-icon>
-      <span>FAQ</span>
+      <span i18n>FAQ</span>
     </a>
     <a href="https://blog.appoutlet.dev/tag/discorkie-changelog?source=tags_bottom_blogs" target="_blank" mat-menu-item>
       <mat-icon class="material-symbols-rounded">text_compare</mat-icon>
-      <span>Release notes</span>
+      <span i18n>Release notes</span>
     </a>
     <a href="https://blog.appoutlet.dev" target="_blank" mat-menu-item>
       <mat-icon class="material-symbols-rounded">news</mat-icon>
-      <span>Blog</span>
+      <span i18n>Blog</span>
     </a>
   </mat-menu>
 
   <mat-menu #organisation="matMenu">
     <a routerLink="/license-agreement" mat-menu-item>
       <mat-icon class="material-symbols-rounded">contract</mat-icon>
-      <span>License agreement</span>
+      <span i18n>License agreement</span>
     </a>
 
     <a routerLink="/privacy-policy" mat-menu-item>
       <mat-icon class="material-symbols-rounded">passkey</mat-icon>
-      <span>Privacy policy</span>
+      <span i18n>Privacy policy</span>
     </a>
 
     <a routerLink="/data-deletion-request" mat-menu-item>
       <mat-icon class="material-symbols-rounded">shield_locked</mat-icon>
-      <span>Data control</span>
+      <span i18n>Data control</span>
     </a>
 
     <a href="https://appoutlet.dev" target="_blank" mat-menu-item>
@@ -72,12 +72,12 @@
   <mat-menu #main="matMenu">
     <button mat-menu-item [matMenuTriggerFor]="about">
       <mat-icon class="material-symbols-rounded">info</mat-icon>
-      <span>About</span>
+      <span i18n>About</span>
     </button>
 
     <button mat-menu-item [matMenuTriggerFor]="organisation">
       <mat-icon class="material-symbols-rounded">domain</mat-icon>
-      Organisation
+      <span i18n>Organisation</span>
     </button>
   </mat-menu>
 </section>
