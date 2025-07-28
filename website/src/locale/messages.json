@@ -1,0 +1,29 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "7094232483852755137": "Requesting Account and Data Deletion for DisCorkie",
+    "2086845410344323555": "This page provides instructions on how to request the deletion of your DisCorkie account and associated data managed by AppOutlet.",
+    "2384275768076025587": "{$START_TAG_STRONG}Important:{$CLOSE_TAG_STRONG} This process applies only to the data we hold directly related to your DisCorkie account (your email address and unique user identifier). We do {$START_TAG_STRONG}not{$CLOSE_TAG_STRONG} control or store data you have on third-party Discourse servers you connect to through DisCorkie. To request data deletion from a specific Discourse forum, you must contact the administrators of that forum directly.",
+    "8615733208373410791": "Steps to Request Data Deletion:",
+    "2313330064534275231": "To request the deletion of your DisCorkie account and the personal data we hold (your email and unique user identifier), please follow these steps:",
+    "7141455732502728919": "{$START_TAG_STRONG}Send an email{$CLOSE_TAG_STRONG} to our support team at: {$START_TAG_STRONG}{$INTERPOLATION}{$CLOSE_TAG_STRONG}",
+    "592832304357046809": "In the subject line of your email, please clearly state: {$START_TAG_STRONG}\"DisCorkie Data Deletion Request\"{$CLOSE_TAG_STRONG}",
+    "5682689869753177682": "In the body of the email, please include the {$START_TAG_STRONG}email address associated with your DisCorkie account{$CLOSE_TAG_STRONG} that you wish to have deleted.",
+    "5848926127131984823": "Optionally, you may include a brief reason for your request, although this is not required.",
+    "7472120567666233612": "Upon receiving your request, our team will verify your identity and proceed with the deletion of your DisCorkie account email and unique user identifier from our active databases.",
+    "6398158611743113975": "What Data is Deleted and Kept:",
+    "2089282189246574965": "{$START_TAG_STRONG}Data Deleted:{$CLOSE_TAG_STRONG} Your DisCorkie account email address and the unique user identifier (UUID) associated with your account in our authentication system (Supabase) will be permanently deleted from active systems.",
+    "5682872366739872313": "{$START_TAG_STRONG}Data Kept:{$CLOSE_TAG_STRONG} Some data may be retained in secure backup copies for a limited period in accordance with our data retention policies and legal obligations before being permanently erased. Anonymized usage data and crash reports that do not personally identify you may also be retained for analytical purposes. ",
+    "2088837236053777780": "{$START_TAG_STRONG}Third-Party Data:{$CLOSE_TAG_STRONG} As mentioned above, data you have on individual Discourse servers is not controlled by DisCorkie. Deleting your DisCorkie account does {$START_TAG_STRONG}not{$CLOSE_TAG_STRONG} delete your accounts or data on the Discourse forums you have connected to.",
+    "5639931265242079179": "For more detailed information about the types of data we collect, how we use it, and our data retention practices, please refer to our full {$START_LINK}Privacy Policy{$CLOSE_LINK}.",
+    "8015770530279596828": "We aim to process data deletion requests promptly. If you have any questions about this process, please contact us at {$INTERPOLATION}.",
+    "8437676821683850974": "Thank you for using DisCorkie.",
+    "445284822999806982": "download on your device",
+    "6797127544142530764": "Simplify the way you explore and engage in online discussions. Download DisCorkie now and take control of your forum experience.",
+    "5103788378973384072": "Desktop",
+    "1002165214775409029": "Mobile",
+    "91566049711067964": "Welcome to the DisCorkie FAQ. Whether you're just discovering DisCorkie or already managing multiple forums with ease, this page is here to help. We've compiled answers to common questions about what DisCorkie is, how it works, and how to make the most of it across all your devices.",
+    "3326471353929406052": "{$START_BLOCK_FOR}{$START_TAG_MAT_EXPANSION_PANEL}{$START_TAG_MAT_EXPANSION_PANEL_HEADER}{$START_TAG_MAT_PANEL_TITLE} {$INTERPOLATION}{$CLOSE_TAG_MAT_PANEL_TITLE}{$CLOSE_TAG_MAT_EXPANSION_PANEL_HEADER}{$START_PARAGRAPH}{$INTERPOLATION_1}{$CLOSE_PARAGRAPH}{$CLOSE_TAG_MAT_EXPANSION_PANEL}{$CLOSE_BLOCK_FOR}",
+    "3168646965600741452": " Still have questions? We're here to help! If you couldn't find the answer you were looking for, feel free to reach out to us on social media or email us at {$START_LINK}{$INTERPOLATION}{$CLOSE_LINK}. Your feedback helps us make DisCorkie even better. "
+  }
+}
