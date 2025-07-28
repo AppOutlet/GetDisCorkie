@@ -1,0 +1,54 @@
+version: 2
+updates:
+  # Enable version updates for npm dependencies in the Angular website
+  - package-ecosystem: "npm"
+    directory: "/website"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "AppOutlet"
+    assignees:
+      - "AppOutlet"
+    commit-message:
+      prefix: "deps"
+      prefix-development: "deps-dev"
+      include: "scope"
+    groups:
+      angular:
+        patterns:
+          - "@angular/*"
+        update-types:
+          - "minor"
+          - "patch"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+    ignore:
+      # Ignore major version updates for core Angular packages
+      # to prevent breaking changes without manual review
+      - dependency-name: "@angular/*"
+        update-types: ["version-update:semver-major"]
+      # Ignore Node.js types major updates
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "AppOutlet"
+    assignees:
+      - "AppOutlet"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
