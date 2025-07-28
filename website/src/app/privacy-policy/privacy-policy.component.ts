@@ -10,7 +10,7 @@ import { RemarkModule } from 'ngx-remark';
   imports: [RemarkModule, MatCardModule],
 })
 export class PrivacyPolicyComponent {
-  markdownContent = `
+  markdownContent =$localize`
 # **Privacy Policy for DisCorkie**
 
 **Last Updated: June 26, 2024**
