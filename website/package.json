@@ -7,7 +7,8 @@
     "build": "ng build --localize",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:website": "node dist/website/server/server.mjs"
+    "serve:ssr:website": "node dist/website/server/server.mjs",
+    "translate": "rm src/locale/messages.en.json && cp src/locale/messages.json src/locale/messages.en.json && npx lingo.dev@latest i18n"
   },
   "private": true,
   "dependencies": {
