@@ -17,23 +17,26 @@
           text="Windows"
           [link]="windowsDownloadLink"
           target=""
+          data-umami-event="download-windows"
         ></app-download-button>
 
         <app-download-button
           icon="linux-logo"
           text="Flatpak"
           link="https://flathub.org/apps/dev.appoutlet.DisCorkie"
+          data-umami-event="download-flatpak"
         ></app-download-button>
 
         <app-download-button
           icon="linux-logo"
           text="Snap"
           link="https://snapcraft.io/discorkie"
+          data-umami-event="download-snap"
         ></app-download-button>
 
         <h3 i18n>Mobile</h3>
 
-        <a href="https://play.google.com/store/apps/details?id=dev.appoutlet.DisCorkie" target="_blank" rel="noopener">
+        <a href="https://play.google.com/store/apps/details?id=dev.appoutlet.DisCorkie" target="_blank" rel="noopener" data-umami-event="download-google-play">
           <img class="mobile-button" src="img/download/google-play-store.avif" alt="Google play store logo"  />
         </a>
       </div>
