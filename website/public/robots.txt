@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://discorkie.appoutlet.dev/sitemap.xml
