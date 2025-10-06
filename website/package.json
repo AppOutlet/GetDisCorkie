@@ -28,7 +28,7 @@
     "bootstrap": "^5.3.8",
     "express": "^5.1.0",
     "graphql": "^16",
-    "katex": "^0.16.22",
+    "katex": "^0.16.23",
     "ngx-remark": "^0.1.5",
     "remark": "^15.0.1",
     "rxjs": "~7.8.0",
