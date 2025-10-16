@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostComponent } from './post/post.component';
 import { Apollo, gql } from 'apollo-angular';
-import { ApolloQueryResult } from '@apollo/client/core';
+import { ApolloQueryResult, ObservableQuery } from '@apollo/client/core';
 import { map } from 'rxjs/operators';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -37,20 +37,23 @@ export class PostsComponent implements OnInit {
 
   posts: Post[] = [];
 
-  constructor(private apollo: Apollo) {}
+  constructor(private apollo: Apollo) { }
 
   ngOnInit(): void {
     this.apollo
       .watchQuery<PublicationResponse>({ query: this.query })
       .valueChanges.pipe(
         map(
-          (result: ApolloQueryResult<PublicationResponse>) =>
-            result.data.publication.series.posts.edges
+          (result: ObservableQuery.Result<PublicationResponse>) => {
+            return result.data?.publication?.series?.posts?.edges || [];
+          }
         ),
-        map((edges) => edges.map((edge) => edge.node))
+        map((edges) => edges.map((edge) => edge?.node).filter((node): node is Post => node !== undefined)),
       )
       .subscribe((result) => {
-        this.posts = result;
+        if (result) {
+          this.posts = result;
+        }
       });
   }
 }
