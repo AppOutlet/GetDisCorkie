@@ -8,8 +8,6 @@ updates:
       day: "monday"
       time: "09:00"
     open-pull-requests-limit: 10
-    reviewers:
-      - "AppOutlet"
     assignees:
       - "AppOutlet"
     commit-message:
@@ -28,6 +26,10 @@ updates:
         update-types:
           - "minor"
           - "patch"
+      apollo:
+        patterns:
+          - "@apollo/client"
+          - "apollo-angular"
     ignore:
       # Ignore major version updates for core Angular packages
       # to prevent breaking changes without manual review
@@ -45,8 +47,6 @@ updates:
       day: "monday"
       time: "09:00"
     open-pull-requests-limit: 5
-    reviewers:
-      - "AppOutlet"
     assignees:
       - "AppOutlet"
     commit-message:
