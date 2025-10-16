@@ -7,7 +7,7 @@ perennial-regex = ""
 
 [create]
 new-branch-type = ""
-push-new-branches = true
+share-new-branches = "push"
 
 [hosting]
 dev-remote = "origin"
