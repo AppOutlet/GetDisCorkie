@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/header/header.component.scss"],
+  "sourcesContent": ["@use \"@angular/material\" as mat;\n@use \"../../variables.scss\" as variables;\n\n.spacer {\n  flex: 1 1 auto;\n}\n\n.logo {\n  height: 2.1em;\n  width: 2.1em;\n  margin-right: 0.4em;\n}\n\n.site-title {\n  font-weight: 600;\n}\n\n.menu-button {\n  display: none;\n  margin-right: .4em;\n  @media (max-width: 768px) {\n    display: inline;\n  }\n}\n"],
+  "mappings": "AAGA,CAAA,OACE,KAAA,EAAA,EAAA,KAGF,CAAA,KACE,OAAA,MACA,MAAA,MACA,aAAA,KAGF,CAAA,WACE,YAAA,IAGF,CAAA,YACE,QAAA,KACA,aAAA,KACA,OAAA,UAAA,OAHF,CAAA,YAII,QAAA",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/footer/footer.component.scss"],
+  "sourcesContent": ["section {\n  background-color: #f3efe7;\n  padding-top: 4em;\n  padding-bottom: 4em;\n  border-start-end-radius: 8em;\n}\n\n.logo {\n  width: 3em;\n  height: 3em;\n}\n\n.app-name {\n  font-weight: 600;\n}\n\n.copyright {\n  font-size: small;\n  opacity: 0.5;\n}\n\n.link-column a {\n  text-decoration: none;\n  color: inherit;\n  display: block;\n  margin-bottom: 1em;\n}\n"],
+  "mappings": "AAAA,QACE,iBAAA,QACA,YAAA,IACA,eAAA,IACA,wBAAA,IAGF,CAAA,KACE,MAAA,IACA,OAAA,IAGF,CAAA,SACE,YAAA,IAGF,CAAA,UACE,UAAA,MACA,QAAA,GAGF,CAAA,YAAA,EACE,gBAAA,KACA,MAAA,QACA,QAAA,MACA,cAAA",
+  "names": []
+}

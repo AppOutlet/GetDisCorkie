@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/slogan/slogan.component.scss"],
+  "sourcesContent": ["$padding-vertical: 6em;\n\n.slogan {\n  text-align: center;\n  padding-top: $padding-vertical;\n  padding-bottom: $padding-vertical;\n}\n\nh2 {\n  text-transform: uppercase;\n  font-weight: 600;\n}\n"],
+  "mappings": "AAEA,CAAA,OACE,WAAA,OACA,YAJiB,IAKjB,eALiB,IAQnB,GACE,eAAA,UACA,YAAA",
+  "names": []
+}

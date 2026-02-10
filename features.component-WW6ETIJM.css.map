@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/features.component.scss"],
+  "sourcesContent": [".screenshot {\n  width: 100%;\n  height: auto;\n  max-width: 100%;\n  max-height: 100%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n}\n"],
+  "mappings": "AAAA,CAAA,WACE,MAAA,KACA,OAAA,KACA,UAAA,KACA,WAAA,KACA,QAAA,MACA,YAAA,KACA,aAAA",
+  "names": []
+}

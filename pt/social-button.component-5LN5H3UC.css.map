@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/social-button/social-button.component.scss"],
+  "sourcesContent": ["a {\n  background-color: #F3EFE7;\n}\n"],
+  "mappings": "AAAA,EACE,iBAAA",
+  "names": []
+}

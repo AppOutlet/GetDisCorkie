@@ -1,9 +1,0 @@
-@use "@angular/material" as mat;
-
-mat-card {
-  @include mat.card-overrides(
-    (
-      elevated-container-color: #f3efe7
-    )
-  );
-}

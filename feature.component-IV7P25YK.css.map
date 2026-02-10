@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/feature/feature.component.scss"],
+  "sourcesContent": [".feature {\n  margin-top: 5em;\n  margin-bottom: 5em;\n\n  @media (max-width: 992px) {\n    margin-top: 2.5em;\n    margin-bottom: 2.5em;\n  }\n}\n\na {\n  background-color: #F3EFE7;\n}\n\n.title {\n  font-weight: 600;\n  margin-top: 1.5em;\n}\n"],
+  "mappings": "AAAA,CAAA,QACE,WAAA,IACA,cAAA,IAEA,OAAA,UAAA,OAJF,CAAA,QAKI,WAAA,MACA,cAAA,OAIJ,EACE,iBAAA,QAGF,CAAA,MACE,YAAA,IACA,WAAA",
+  "names": []
+}
