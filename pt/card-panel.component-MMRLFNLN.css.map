@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/card-panel/card-panel.component.scss", "src/variables.scss"],
+  "sourcesContent": ["@use '../../variables' as variables;\n\n.app-card-panel {\n  background-color: #ffffff;\n  border-radius: 2rem !important;\n  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08) !important;\n  height: 100%;\n  box-sizing: border-box;\n  overflow: hidden;\n\n  &.highlighted {\n    background-color: #f3efe7;\n    color: variables.$text-color;\n    border: 2px solid variables.$text-color;\n    box-shadow: 0 25px 50px rgba(105, 55, 50, 0.1) !important;\n\n    ::ng-deep {\n      .mat-mdc-card-content {\n        color: variables.$text-color !important;\n      }\n\n      .icon-primary {\n        color: variables.$text-color !important;\n      }\n\n      .divider {\n        border-top-color: rgba(105, 55, 50, 0.15) !important;\n      }\n    }\n  }\n}\n\n.app-card-content {\n  padding: 2.5rem !important;\n  height: 100%;\n  box-sizing: border-box;\n}\n\n@media (max-width: 768px) {\n  .app-card-content {\n    padding: 1.5rem !important;\n  }\n}\n", "$background-color: #FBF9F5;\n$text-color: #693732;\n"],
+  "mappings": "AAEA,CAAA,eACE,iBAAA,KADF,cAEE,eACA,WAAA,EAAA,KAAA,KAAA,oBACA,OAAA,KACA,WAAA,WACA,SAAA,OAEA,CARF,cAQE,CAAA,YACE,iBAAA,QACA,MCXS,QDYT,OAAA,IAAA,MAAA,QACA,WAAA,EAAA,KAAA,KAAA,oBAGE,CAfN,cAeM,CAPJ,YAOI,UAAA,CAAA,qBACE,MAAA,kBAGF,CAnBN,cAmBM,CAXJ,YAWI,UAAA,CAAA,aACE,MAAA,kBAGF,CAvBN,cAuBM,CAfJ,YAeI,UAAA,CAAA,QACE,iBAAA,oBAMR,CAAA,iBA9BA,QA+BE,iBACA,OAAA,KACA,WAAA,WAGF,OAAA,UAAA,OACE,CAPF,iBA9BA,QAsCI",
+  "names": []
+}

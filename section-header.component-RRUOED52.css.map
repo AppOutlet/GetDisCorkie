@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/section-header/section-header.component.scss"],
+  "sourcesContent": [".section-header {\n  margin-top: 4rem;\n  margin-bottom: 4rem;\n}\n\n.m-0 {\n  margin: 0;\n}\n\n.mt-3 {\n  margin-top: 1rem;\n}\n\n.opacity-75 {\n  opacity: 0.75;\n}\n\n.subtitle-max-width {\n  max-width: 800px;\n}\n"],
+  "mappings": "AAAA,CAAA,eACE,WAAA,KACA,cAAA,KAGF,CAAA,IALA,OAME,EAGF,CAAA,KACE,WAAA,KAGF,CAAA,WACE,QAAA,IAGF,CAAA,mBACE,UAAA",
+  "names": []
+}
